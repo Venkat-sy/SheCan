@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./Home.module.css";
 import { useInViewFadeUp } from "../utils/useInViewFadeUp";
 import heroImg from "../../public/assets/hero.jpg";
@@ -16,12 +17,12 @@ export default function Home() {
             </p>
 
             <div className={styles.actions}>
-              <a className={styles.primaryBtn} href="/join">
+              <Link className={styles.primaryBtn} to="/join">
                 Join Us ✨
-              </a>
-              <a className={styles.secondaryBtn} href="/about">
+              </Link>
+              <Link className={styles.secondaryBtn} to="/about">
                 Learn more
-              </a>
+              </Link>
             </div>
 
             <div className={styles.badges}>
