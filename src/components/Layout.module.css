@@ -4,16 +4,21 @@
   flex-direction: column;
   background:
     radial-gradient(
-      900px 400px at 10% 0%,
-      rgba(255, 214, 102, 0.18),
-      transparent 55%
+      600px circle at 15% 15%,
+      rgba(255, 214, 102, 0.2),
+      transparent 36%
     ),
     radial-gradient(
-      900px 400px at 90% 10%,
-      rgba(255, 79, 164, 0.14),
-      transparent 60%
+      700px circle at 90% 20%,
+      rgba(255, 79, 164, 0.18),
+      transparent 32%
     ),
-    #0b1220;
+    radial-gradient(
+      600px circle at 70% 90%,
+      rgba(163, 94, 255, 0.16),
+      transparent 24%
+    ),
+    #070b16;
   color: #eaf0ff;
 }
 
@@ -26,9 +31,10 @@
   justify-content: space-between;
   gap: 16px;
   padding: 14px 22px;
-  background: rgba(11, 18, 32, 0.7);
-  backdrop-filter: blur(10px);
+  background: rgba(8, 12, 24, 0.78);
+  backdrop-filter: blur(16px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.16);
 }
 
 .brand {
@@ -37,9 +43,9 @@
   align-items: baseline;
 }
 .logo {
-  font-weight: 800;
-  letter-spacing: 0.4px;
-  font-size: 1.15rem;
+  font-weight: 900;
+  letter-spacing: 0.6px;
+  font-size: 1.25rem;
 }
 .tagline {
   opacity: 0.75;
@@ -56,28 +62,30 @@
   text-decoration: none;
   font-weight: 600;
   font-size: 0.95rem;
-  padding: 8px 10px;
+  padding: 10px 14px;
   border-radius: 999px;
   transition:
-    transform 0.15s ease,
-    background 0.2s ease,
-    opacity 0.2s ease;
+    transform 0.18s ease,
+    background 0.25s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 .navLink {
-  color: rgba(234, 240, 255, 0.85);
-  background: transparent;
+  color: rgba(234, 240, 255, 0.88);
+  background: rgba(255, 255, 255, 0.04);
 }
 .navLinkActive {
   color: #0b1220;
   background: linear-gradient(135deg, #ffd666, #ff4fa4);
+  box-shadow: 0 12px 28px rgba(255, 79, 164, 0.18);
 }
 
 .navLink:hover {
-  transform: translateY(-1px);
-  background: rgba(255, 255, 255, 0.06);
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.12);
 }
 .navLinkActive:hover {
-  transform: translateY(-1px);
+  box-shadow: 0 16px 34px rgba(255, 79, 164, 0.22);
 }
 
 .main {

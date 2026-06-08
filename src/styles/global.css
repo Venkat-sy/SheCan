@@ -2,6 +2,7 @@
 
 :root {
   color-scheme: dark;
+  background-color: #070b16;
 }
 
 * {
@@ -21,18 +22,44 @@ body {
     Roboto,
     Arial,
     sans-serif;
-  background: #0b1220;
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(255, 214, 102, 0.16),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at top right,
+      rgba(255, 79, 164, 0.14),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at bottom center,
+      rgba(163, 94, 255, 0.1),
+      transparent 20%
+    ),
+    #070b16;
   color: #eaf0ff;
 }
 
 a {
   color: inherit;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #ffd666;
+}
+
+::selection {
+  background: rgba(255, 214, 102, 0.35);
+  color: #0b1220;
 }
 
 /* Reveal animations */
 .reveal {
   opacity: 0;
-  transform: translateY(14px);
+  transform: translateY(24px);
   transition:
     opacity 0.6s ease,
     transform 0.6s ease;
