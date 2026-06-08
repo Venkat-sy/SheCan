@@ -8,6 +8,8 @@
     "dev:client": "vite",
     "dev:server": "node server/index.js",
     "build": "vite build",
+    "build:docs": "vite build --outDir docs",
+    "deploy:pages": "npm run build:docs",
     "start": "node server/index.js"
   },
   "dependencies": {
