@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.inner}>
         <div className={styles.left}>
-          <div className={styles.brand}>CanShe</div>
+          <div className={styles.brand}>SheCan</div>
           <div className={styles.muted}>
             She Can Foundation • Women’s Empowerment & Careers
           </div>

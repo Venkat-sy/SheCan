@@ -1,4 +1,4 @@
-# She Can Foundation (CanShe) — React + Express
+# She Can Foundation (SheCan) — React + Express
 
 Simple multipage (SPA routes) website with animations + minimal backend endpoint for the Join/Volunteer form.
 

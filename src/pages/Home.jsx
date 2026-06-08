@@ -81,7 +81,7 @@ function AnimatedText() {
         Research • Resilience • Real opportunities.
       </h1>
       <div ref={fade3.ref} className={fade3.className}>
-        <h2 className={styles.smallTitle}>At CanShe (She Can Foundation)</h2>
+        <h2 className={styles.smallTitle}>At SheCan (She Can Foundation)</h2>
       </div>
     </div>
   );

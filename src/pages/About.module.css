@@ -32,6 +32,188 @@ h1 {
   line-height: 1.75;
 }
 
+.editor {
+  margin-top: 26px;
+  padding: 24px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.12);
+}
+
+.editorHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.editorHeader h2 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.editorHeader p {
+  margin: 6px 0 0;
+  opacity: 0.82;
+}
+
+.editorActions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.primaryBtn,
+.secondaryBtn,
+.downloadLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 18px;
+  border-radius: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease,
+    filter 0.2s ease;
+}
+
+.primaryBtn {
+  background: linear-gradient(135deg, #ffd666, #ff4fa4);
+  color: #0b1220;
+  box-shadow: 0 18px 52px rgba(255, 79, 164, 0.24);
+}
+
+.primaryBtn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 22px 68px rgba(255, 79, 164, 0.3);
+}
+
+.secondaryBtn,
+.downloadLink {
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(234, 240, 255, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.secondaryBtn:hover,
+.downloadLink:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.16);
+  box-shadow: 0 18px 48px rgba(255, 79, 164, 0.16);
+}
+
+.textarea {
+  width: 100%;
+  min-height: 240px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.04);
+  color: #eaf0ff;
+  padding: 16px;
+  font-size: 1rem;
+  outline: none;
+  resize: vertical;
+}
+
+.textarea:focus {
+  border-color: rgba(255, 214, 102, 0.5);
+  box-shadow: 0 0 0 4px rgba(255, 214, 102, 0.08);
+}
+
+.status {
+  margin-top: 14px;
+  padding: 14px 16px;
+  border-radius: 18px;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #e4eaf9;
+}
+
+.imagePreviewWrap {
+  margin-top: 20px;
+  padding: 18px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.imagePreviewWrap h3 {
+  margin: 0 0 12px;
+  font-size: 1.1rem;
+}
+
+.imagePreview {
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  margin-bottom: 12px;
+}
+
+.grid {
+  display: grid;
+  padding: 24px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.12);
+}
+
+.editorHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.editorHeader h2 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.editorHeader p {
+  margin: 6px 0 0;
+  opacity: 0.82;
+}
+
+.editorActions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.textarea {
+  width: 100%;
+  min-height: 240px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.04);
+  color: #eaf0ff;
+  padding: 16px;
+  font-size: 1rem;
+  outline: none;
+  resize: vertical;
+}
+
+.textarea:focus {
+  border-color: rgba(255, 214, 102, 0.5);
+  box-shadow: 0 0 0 4px rgba(255, 214, 102, 0.08);
+}
+
+.status {
+  margin-top: 14px;
+  padding: 14px 16px;
+  border-radius: 18px;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #e4eaf9;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

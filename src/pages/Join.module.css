@@ -117,6 +117,78 @@ form {
   cursor: not-allowed;
 }
 
+.actionsRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.previewArea {
+  padding: 18px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.secondaryBtn {
+  border: none;
+  border-radius: 16px;
+  padding: 14px 18px;
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(234, 240, 255, 0.96);
+  cursor: pointer;
+  transition:
+    transform 0.18s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.secondaryBtn:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.16);
+  box-shadow: 0 12px 32px rgba(255, 79, 164, 0.12);
+}
+
+.imagePreviewWrap {
+  margin-top: 22px;
+  padding: 18px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.imagePreviewWrap h3 {
+  margin: 0 0 12px;
+  font-size: 1.1rem;
+}
+
+.imagePreview {
+  width: 100%;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: block;
+  margin-bottom: 12px;
+}
+
+.downloadLink {
+  display: inline-flex;
+  padding: 12px 16px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #ffd666, #ff4fa4);
+  color: #0b1220;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.2s ease;
+}
+
+.downloadLink:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 34px rgba(255, 79, 164, 0.18);
+}
+
 .success,
 .error,
 .loading {

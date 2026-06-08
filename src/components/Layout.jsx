@@ -9,7 +9,7 @@ export default function Layout({ children }) {
     <div className={styles.page}>
       <header className={styles.header}>
         <div className={styles.brand}>
-          <span className={styles.logo}>CanShe</span>
+          <span className={styles.logo}>SheCan</span>
           <span className={styles.tagline}>She Can Foundation</span>
         </div>
 

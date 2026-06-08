@@ -81,11 +81,15 @@
 }
 
 .navLink:hover {
-  transform: translateY(-2px);
-  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-3px) scale(1.06);
+  background: rgba(255, 255, 255, 0.14);
+  filter: saturate(1.1);
+  animation: wobble 520ms cubic-bezier(0.2, 0.9, 0.25, 1);
 }
 .navLinkActive:hover {
-  box-shadow: 0 16px 34px rgba(255, 79, 164, 0.22);
+  transform: translateY(-3px) scale(1.08);
+  box-shadow: 0 18px 44px rgba(255, 79, 164, 0.26);
+  animation: wobble 520ms cubic-bezier(0.2, 0.9, 0.25, 1);
 }
 
 .main {
